@@ -12,7 +12,8 @@
     "lint": "esw webpack.config.* src build-scripts --color",
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress build-scripts/test-setup.js \"src/**/*.test.js\"",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "generate-mock-data": "babel-node build-scripts/generate-mock-data.js",
   },
   "author": "Cory House",
   "license": "MIT",

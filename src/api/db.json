@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 8130995,
+      "firstName": "Jasmin",
+      "lastName": "Robel",
+      "email": "Rollin_Parker@gmail.com"
+    },
+    {
+      "id": 68374520,
+      "firstName": "Coralie",
+      "lastName": "Reinger",
+      "email": "Amara31@gmail.com"
+    },
+    {
+      "id": 76051573,
+      "firstName": "Jermey",
+      "lastName": "Reichel",
+      "email": "Jose48@gmail.com"
+    },
+    {
+      "id": 38822978,
+      "firstName": "Camryn",
+      "lastName": "Jerde",
+      "email": "Alba_Nolan@gmail.com"
+    }
+  ]
+}
