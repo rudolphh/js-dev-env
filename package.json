@@ -1,10 +1,10 @@
 {
   "name": "javascript-development-environment",
   "version": "1.0.0",
-  "description": "JavaScript development environment Pluralsight course by Cory House",
+  "description": "JavaScript development environment",
   "scripts": {
     "prestart": "babel-node build-scripts/start-msg.js",
-    "start": "npm-run-all --parallel open:src lint:watch test:watch",
+    "start": "npm-run-all --parallel open:src lint:watch test:watch start-mockapi",
     "open:src": "babel-node build-scripts/src-server.js",
     "localtunnel": "lt --port 3000 --subdomain newproj",
     "share": "npm-run-all --parallel start localtunnel",
@@ -14,12 +14,11 @@
     "test": "mocha --reporter progress build-scripts/test-setup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch",
     "generate-mock-data": "babel-node build-scripts/generate-mock-data.js",
+    "prestart-mockapi": "npm run generate-mock-data",
+    "start-mockapi": "json-server --watch src/api/db.json --port 3001"
   },
-  "author": "Cory House",
+  "author": "Rudy A. Hernandez",
   "license": "MIT",
-  "dependencies": {
-    "whatwg-fetch": "3.6.2"
-  },
   "devDependencies": {
     "@babel/cli": "7.13.0",
     "@babel/core": "7.13.8",
@@ -53,5 +52,8 @@
     "surge": "0.21.7",
     "webpack": "5.24.2",
     "webpack-dev-middleware": "4.1.0"
+  },
+  "dependencies": {
+    "whatwg-fetch": "^3.6.2"
   }
 }

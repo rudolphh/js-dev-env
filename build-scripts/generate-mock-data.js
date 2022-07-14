@@ -7,6 +7,7 @@
 
 /* eslint-disable no-console */
 
+// eslint-disable-next-line import/named
 import { extend, generate } from 'json-schema-faker';
 
 import chalk from 'chalk';
