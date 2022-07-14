@@ -6,6 +6,7 @@ import webpack from 'webpack';
 
 /* eslint-disable no-console */
 const port = 3000;
+const proxy_port=3003;
 const app = express();
 const compiler = webpack(config);
 
@@ -21,5 +22,5 @@ app.get('/', function (req, res) {
 
 app.listen(port, function (err) {
   if(err) console.log(err);
-  else open(`http://localhost:${port}`);
+  else open(`http://localhost:${proxy_port}`);
 })

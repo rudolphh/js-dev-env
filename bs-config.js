@@ -16,7 +16,7 @@ module.exports = {
     "ui": {
         "port": 3002
     },
-    "files": false,
+    "files": ['./src/*.js', './src/*.html'],
     "tunnel": "rudy",
     "watchEvents": [
         "change"
@@ -28,9 +28,9 @@ module.exports = {
         "ignoreInitial": true
     },
     // Serve files from the app directory with directory listing
-    "server": "src",
-    "proxy": false,
-    "port": 3000,
+    "server": false,
+    "proxy": "localhost:3000",
+    "port": 3003,
     "middleware": false,
     "serveStatic": [],
     "ghostMode": {
